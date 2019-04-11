@@ -44,7 +44,7 @@ kubectl obtains configuration settings from ~/,kube/config.  We can automaticall
 aws eks --region ap-southeast-1 update-kubeconfig --name terraform-eks
 ```
 
-Note you will need to ensure that the region and name are correct for your cluster.
+Note you will need to ensure that the region and name are correct for your cluster.  If you get an error stating that update-kubeconfig is an unknown sub-command for EKS, you will need to upgrade to the latest AWS CLI version.
 
 For a full explanation and other options refer to the [AWS documentation](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html).
 
